@@ -4526,7 +4526,7 @@ public abstract class TeamTalkTestCase extends TeamTalkTestCaseBase {
 
     @Test
     public void testTimeZone() {
-        final String USERNAME = "tt_test", PASSWORD = "tt_test", NICKNAME = "jUnit - " + getTestMethodName();
+        final String USERNAME = getTestMethodName(), PASSWORD = "tt_test", NICKNAME = "jUnit - " + getTestMethodName();
         int USERRIGHTS = UserRight.USERRIGHT_TRANSMIT_MEDIAFILE | UserRight.USERRIGHT_CREATE_TEMPORARY_CHANNEL;
         makeUserAccount(NICKNAME, USERNAME, PASSWORD, USERRIGHTS);
 
