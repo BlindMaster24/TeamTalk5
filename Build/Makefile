@@ -338,6 +338,7 @@ depend-ubuntu24:
 		qt6-tools-dev \
 		qt6-tools-dev-tools \
 		wget \
+		xz-utils \
 		yasm
 	@echo "Ensure a default python is set up for WebRTC to compile:"
 	@echo "# sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 12"
