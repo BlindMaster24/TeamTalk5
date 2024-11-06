@@ -25,10 +25,10 @@
 #define WEBRTCPREPROCESS_H
 
 #include <mystd/MyStd.h>
+#include <codec/MediaUtil.h>
 
 #include <audio_processing.h>
 
-#include <codec/MediaUtil.h>
 
 bool IsEnabled(const webrtc::AudioProcessing::Config& cfg);
 
