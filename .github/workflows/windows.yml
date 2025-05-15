@@ -1,9 +1,10 @@
 name: Windows
 
-on: [push]
+on:
+  push:
+  workflow_dispatch:
 
 env:
-  # TeamTalk unit test environment variables
   INPUTDEVICEID: 1978
   OUTPUTDEVICEID: 1978
   VIDEODEVICEID: None
@@ -207,7 +208,6 @@ jobs:
       run: |
         tt5prosvc.exe -u
 
-    # Doxygen doesn't exist as GitHub action, so use pacman from MSYS64
     - uses: msys2/setup-msys2@v2
       with:
         msystem: ${{ matrix.msystem }}
